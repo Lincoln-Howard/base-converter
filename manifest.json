@@ -1,0 +1,15 @@
+{
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "manifest_version": 2,
+  "name": "Base Converter",
+  "version": "0.0.1",
+  "description": "A simple base converter between multiple bases",
+  "icons": {
+    "32": "assets/Icon_32.png",
+    "64": "assets/Icon_64.png"
+  }
+}

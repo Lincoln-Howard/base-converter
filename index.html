@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Base Converter</title>
+  <link rel="Stylesheet" href="lib/bootstrap.css">
+  <script src="bases.js"></script>
+  <style type="text/css">
+    :root {
+      -webkit-user-select: none;
+    }
+    .selectable {
+      -webkit-user-select: text;
+    }
+    .vcenter {
+        display: inline-block;
+        vertical-align: middle;
+        float: none;
+    }
+    .buffer {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+  </style>
+</head>
+  <body>
+  <div class="container-fluid">
+    <div class="row buffer"></div>
+    <div class="row buffer"></div>
+    <div class="row buffer">
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 vcenter">
+        <img class="center-block" src="assets/Icon_64.png">
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 vcenter">
+        <p class="text-center">
+          A base converter created by Lincoln Howard.
+          Converts between binary, octal, decimal, dozenal, and hexadecimal.
+        </p>
+      </div>
+    </div>
+    <div class="row buffer"></div>
+    <div class="row buffer"></div>
+    <div class="row buffer">
+      <div class="col-xs-1 col-xs-offset-2 col-sm-1 col-sm-offset-2 col-md-1 col-md-offset-2 col-lg-1 col-lg-offset-2 vcenter">
+        <p class="text-center">
+          source:
+        </p>
+      </div>
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+        <input class="center-block selectable" id="input" type="text" maxlength="12">
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 vcenter">
+        <select id="base_source" class="center-block">
+          <option>binary</option>
+          <option>octal</option>
+          <option selected>decimal</option>
+          <option>dozenal</option>
+          <option>hexadecimal</option>
+        </select>
+      </div>
+    </div>
+    <div class="row buffer"></div>
+    <div class="row buffer">
+      <div class="col-xs-1 col-xs-offset-2 col-sm-1 col-sm-offset-2 col-md-1 col-md-offset-2 col-lg-1 col-lg-offset-2 vcenter">
+        <p class="text-center">
+          target:
+        </p>
+      </div>
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+        <p class="text-center selectable" id="output"></p>
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 vcenter">
+        <select id="base_target" class="center-block">
+          <option>binary</option>
+          <option>octal</option>
+          <option>decimal</option>
+          <option>dozenal</option>
+          <option selected>hexadecimal</option>
+        </select>
+      </div>
+    </div>
+    <div class="row buffer"></div>
+    <div class="row buffer">
+      <div class="col-xs-2 col-xs-offset-5 col-sm-2 col-sm-offset-5 col-md-2 col-md-offset-5 col-lg-2 col-lg-offset-5">
+        <button id="calculate" class="btn btn-default center-block">Calculate</button>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
