@@ -10,6 +10,7 @@
   "description": "A simple base converter between multiple bases",
   "icons": {
     "32": "assets/Icon_32.png",
-    "64": "assets/Icon_64.png"
+    "64": "assets/Icon_64.png",
+    "128": "assets/Icon_128.png"
   }
 }
